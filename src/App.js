@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/header'
+import Container from './components/container'
+import ProductContainer from './components/product-container'
+import BlackContainer from './components/black-container'
+import Footer from './components/footer'
+
+import {data} from './dados/dados'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container>
+        <Header />
+        {data.map(produto => (
+          <>
+            <ProductContainer dados={produto} />
+            <BlackContainer dados={produto} />
+          </>
+        ))}
+        
+        <Footer />
+      </Container>
     </div>
   );
 }

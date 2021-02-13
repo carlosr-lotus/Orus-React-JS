@@ -1,0 +1,69 @@
+/* Global CSS for Products Container */
+.product-container {
+    margin: 2.8rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+}
+
+.product-container>img {
+    width: 65%;
+}
+
+/* Orus Tower Presentation */
+.orus-tower {
+    position: absolute;
+
+    height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.product-presentation h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.product-presentation h3 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.product-presentation button {
+    align-self: flex-end;
+}
+
+/* TABLET RESPONSIVE WEBSITE */
+@media (min-width: 701px) and (max-width: 1366px) {
+    .product-container>img {
+        width: 40%;
+    }
+}
+
+/* LAPTOP - LARGE RESPONSIVE WEBSITE */
+@media (min-width: 1366px) and (max-width: 1440px) {
+    .product-container>img {
+        width: 40%;
+    }
+}
+
+/* DESKTOP - LARGE RESPONSIVE WEBSITE */
+@media(min-width: 1440px) {
+    .product-container>img {
+        width: 30%;
+    }
+
+    .product-container>.orus-phone-image,
+    .orus-book-img {
+        width: 40%;
+    }
+}
