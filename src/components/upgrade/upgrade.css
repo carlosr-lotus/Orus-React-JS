@@ -1,0 +1,47 @@
+/* *** Upgrade/Options Box *** */
+.upgrade-container {
+    width: 100%;
+    border-top: 1px solid var(--Dark-Grey);
+    border-bottom: 1px solid var(--Dark-Grey);
+}
+
+/* ATTENTION!!! */
+/* -=-=-=-= CSS CODE BELOW ONLY FOR ORUS TOWER PAGE -=-=-=-= */
+/* First Upgrade Container = CPU/PROCESSOR upgrade */
+.cpu-container,
+.RAM-container,
+.gpu-container,
+/* .storage-container is also used on orus-phone.html */
+.storage-container {
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cpu-box,
+.RAM-box,
+.GPU-box,
+.SSD-box {
+    border: 1.5px solid var(--Dark-Grey);
+
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+
+    padding: 1.2rem;
+
+    cursor: pointer;
+}
+
+/* -=-=-=-= END CSS CODE ONLY FOR ORUS TOWER PAGE -=-=-=-= */
+
+/* ATTENTION!!! */
+/* -=-=-=-= CSS CODE BELOW ONLY FOR ORUS BOOK PAGE -=-=-=-= */
+.cpu-container-book,
+.storage-container-book {
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

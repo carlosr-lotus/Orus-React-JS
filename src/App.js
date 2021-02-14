@@ -9,14 +9,11 @@ function App() {
   return (
     <div className="App">
       <Container>
-
         <Header />
-        
-        <Switch>
-          <Route path="/" component={HomePage} exact />
-          <Route path="/produto" component={ProductPage} />
-        </Switch>
-        
+          <Switch>
+            <Route path="/" component={HomePage} exact />
+            <Route path="/produto" component={ProductPage} />
+          </Switch>
       </Container>
     </div>
   );

@@ -1,0 +1,41 @@
+:root {
+    /* Colors */
+    --Active: rgb(35, 35, 202);
+}
+
+main {
+    margin-bottom: 16rem;
+}
+
+/* *** Specs Container Configurations *** */
+.specs-container {
+    width: 90%;
+    margin: 0 auto;
+
+    font-size: 1.4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.specs-container h2 {
+    margin: 1.8rem 0;
+}
+
+.specs {
+    padding-bottom: 1.8rem;
+    line-height: 2.5rem;
+}
+
+.specs-note {
+    font-style: italic;
+}
+
+/* DESKTOP CONFIGURATIONS FOR RESPONSIVE WEBSITE */
+@media(min-width: 1440px) {
+    .specs-container {
+        width: 50%;
+    }
+}
