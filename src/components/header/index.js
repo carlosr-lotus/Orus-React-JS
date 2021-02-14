@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import {Link} from 'react-router-dom'
 
 import SideMenu from '../side-menu'
 
@@ -16,7 +17,7 @@ export default function Header() {
         {sideMenu}
         <header>
             <div onClick={handleCLick} className="menu-icon"></div>
-            <a href="./index.html"><img src={require("../../images/logo/logo-black.png").default} alt="logo" className="header-logo" /></a>
+            <Link to="/"><img src={require("../../images/logo/logo-black.png").default} alt="logo" className="header-logo" /></Link>
         </header>
         </>
     )
