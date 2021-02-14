@@ -1,24 +1,22 @@
+import {Switch, Route} from 'react-router-dom'
+
 import Header from './components/header'
 import Container from './components/container'
-import ProductContainer from './components/product-container'
-import BlackContainer from './components/black-container'
-import Footer from './components/footer'
-
-import {data} from './dados/dados'
+import HomePage from './pages/homepage'
+import ProductPage from './pages/product-page'
 
 function App() {
   return (
     <div className="App">
       <Container>
+
         <Header />
-        {data.map(produto => (
-          <>
-            <ProductContainer dados={produto} />
-            <BlackContainer dados={produto} />
-          </>
-        ))}
         
-        <Footer />
+        <Switch>
+          <Route path="/" component={HomePage} exact />
+          <Route path="/produto" component={ProductPage} />
+        </Switch>
+        
       </Container>
     </div>
   );

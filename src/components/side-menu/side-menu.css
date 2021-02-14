@@ -1,0 +1,53 @@
+.side-menu {
+    /* visibility: hidden; */
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    background-color: var(--Dark-Grey);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+
+    transition: .5s;
+}
+
+.side-menu.visible {
+    visibility: visible;
+}
+
+.side-menu ul li {
+    margin: 1.8rem 0;
+    list-style: none;
+}
+
+.side-menu ul li a {
+    font-size: 1.8rem;
+    text-decoration: none;
+
+    color: var(--Text-Light);
+    transition: .2s;
+}
+
+.side-menu ul li a:hover {
+    color: #fff;
+}
+
+/* Javascript file toggles "open" class */
+.menu-icon-open {
+    transform: translateX(-50px);
+    background: transparent;
+    background-color: var(--Text-Light);
+}
+
+.menu-icon.open::before {
+    transform: rotate(45deg) translate(35px, -35px);
+    background-color: var(--Text-Light);
+}
+
+.menu-icon.open::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+    background-color: var(--Text-Light);
+}
